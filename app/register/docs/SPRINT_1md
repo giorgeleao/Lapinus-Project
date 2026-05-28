@@ -1,0 +1,23 @@
+# SPRINT 01
+
+## OBJETIVO
+
+Estruturar a base do sistema.
+
+---
+
+## TAREFAS
+
+- [x] Finalizar PostgreSQL
+- [x] Configurar Prisma
+- [x] Criar schema do banco
+- [x] Criar registro de usuário
+- [ ] Criar login
+- [ ] Criar perfil do tutor
+- [ ] Criar perfil do coelho
+
+---
+
+## STATUS
+
+EM DESENVOLVIMENTO
