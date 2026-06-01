@@ -7,19 +7,23 @@ export async function POST(req: Request) {
 
     const body = await req.json()
 
-    const { name, email, password } = body
+    const {
+      name,
+      email,
+      password,
+      birthDate
+    } = body
 
     if (!name || !email || !password) {
       return NextResponse.json(
-        { error: "Preencha todos os campos" },
+        { error: "Preencha todos os campos obrigatórios" },
         { status: 400 }
       )
     }
 
-    // VERIFICA EMAIL ESPECÍFICO
     const userExists = await prisma.user.findUnique({
       where: {
-        email: email
+        email
       }
     })
 
@@ -30,10 +34,8 @@ export async function POST(req: Request) {
       )
     }
 
-    // CRIPTOGRAFA SENHA
     const hashedPassword = await bcrypt.hash(password, 10)
 
-    // CRIA USUÁRIO
     const user = await prisma.user.create({
       data: {
         name,
@@ -44,7 +46,11 @@ export async function POST(req: Request) {
 
     return NextResponse.json({
       message: "Usuário criado com sucesso",
-      user
+      user: {
+        id: user.id,
+        name: user.name,
+        email: user.email
+      }
     })
 
   } catch (error) {
