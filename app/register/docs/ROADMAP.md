@@ -1,58 +1,45 @@
-# ROADMAP — LAPINUS OS
+# ROADMAP - LAPINUS
 
-# FASE 1 — BASE DO SISTEMA
-
-- [x] Criar projeto Next.js
-- [x] Configurar layout inicial
-- [x] Definir identidade visual
-- [x] Instalar PostgreSQL
-- [x] Configurar Prisma
-- [x] Criar banco Lapinus
-
----
-
-# FASE 2 — AUTENTICAÇÃO
-
-- [x] Registro de usuário
-- [ ] Login
-- [ ] Sessão JWT
-- [ ] Logout
-- [ ] Middleware autenticação
+## Sprint 1
+### Concluído
+- Estrutura do projeto
+- Sistema de autenticação
+- Dashboard inicial
+- Integração Groq
+- Integração Llama
+- Chat funcional
+- Restrição para coelhos
 
 ---
 
-# FASE 3 — TUTOR
+## Sprint 2
+### Objetivo
+Adicionar inteligência baseada em fontes reais.
 
-- [ ] Perfil tutor
-- [ ] Foto
-- [ ] Dados pessoais
-- [ ] Histórico
-
----
-
-# FASE 4 — COELHOS
-
-- [ ] Cadastro de coelho
-- [ ] Peso
-- [ ] Idade
-- [ ] Histórico médico
-- [ ] Alimentação
-- [ ] Upload de imagem
+### Entregas
+- Busca Web
+- Leitura de fontes
+- Referências na resposta
+- Filtro de fontes confiáveis
 
 ---
 
-# FASE 5 — IA VETERINÁRIA
+## Sprint 3
 
-- [ ] Chat IA
-- [ ] Contexto por coelho
-- [ ] Análise de sintomas
-- [ ] Recomendações
+### Sistema Veterinário
+
+- Classificação de risco
+- Casos de emergência
+- Recomendação veterinária
+- Histórico de sintomas
 
 ---
 
-# FASE 6 — COMUNIDADE
+## Sprint 4
 
-- [ ] Feed
-- [ ] Curtidas
-- [ ] Comentários
-- [ ] Upload de fotos
+### Inteligência Avançada
+
+- Memória contextual
+- Personalização por coelho
+- Aprendizado de preferências
+- Sugestões automáticas

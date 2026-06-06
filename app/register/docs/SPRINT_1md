@@ -1,23 +1,41 @@
-# SPRINT 01
+# SPRINT 1 - LAPI IA
 
-## OBJETIVO
+## Objetivo
 
-Estruturar a base do sistema.
-
----
-
-## TAREFAS
-
-- [x] Finalizar PostgreSQL
-- [x] Configurar Prisma
-- [x] Criar schema do banco
-- [x] Criar registro de usuário
-- [ ] Criar login
-- [ ] Criar perfil do tutor
-- [ ] Criar perfil do coelho
+Criar a primeira versão funcional da Lapi IA utilizando Groq e Llama.
 
 ---
 
-## STATUS
+## Entregas
 
-EM DESENVOLVIMENTO
+### Backend
+
+- Endpoint /api/chat
+- Integração Groq
+- Integração Llama 3.3
+
+### Frontend
+
+- Campo de entrada
+- Botão enviar
+- Exibição da resposta
+- Estado de carregamento
+
+### Inteligência
+
+- Restrição para assuntos relacionados a coelhos
+- Respostas em português
+- Tratamento de erros
+- Comunicação amigável
+
+---
+
+## Resultado
+
+A Lapi IA está funcional e responde perguntas relacionadas a coelhos utilizando o modelo Llama 3.3 através da plataforma Groq.
+
+---
+
+## Próximo Passo
+
+Implementar busca em fontes reais para aumentar a confiabilidade das respostas.
